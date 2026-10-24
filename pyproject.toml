@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brstm2mp3"
+version = "1.0.0"
+description = "Convert Nintendo BRSTM (DSP ADPCM) audio to MP3/FLAC/OGG/WAV, pure Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "brstm2mp3 contributors" }]
+dependencies = ["numpy>=1.22"]
+
+[project.scripts]
+brstm2mp3 = "brstm2mp3.cli:main"
+
+[tool.setuptools]
+packages = ["brstm2mp3"]

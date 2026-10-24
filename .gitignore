@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+out/
+*.mp3
+*.flac
+*.wav
+!out/README.txt
+
+# AI agent config (never push)
+AGENTS.md
+CLAUDE.md
